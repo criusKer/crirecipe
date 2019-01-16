@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#fab27b"
+    >
+    <include layout="@layout/base_nav"/>
+
+    <crirecipe.criusker.crirecipe.ui.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/layout_background"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:id="@+id/iv_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/image_explain"
+                    android:scaleType="center"
+                    android:src="@drawable/background" />
+            </FrameLayout>
+
+            <crirecipe.criusker.crirecipe.ui.UnScrollListView
+                android:id="@+id/usedBooksList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fab27b"/>
+        </LinearLayout>
+    </crirecipe.criusker.crirecipe.ui.MyScrollView>
+
+</LinearLayout>
+

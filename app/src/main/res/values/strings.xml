@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CriRecipe</string>
+    <string name="image_explain">食谱图片</string>
+    <string name="home_image">首页底部导航-首页</string>
+    <string name="home_text">首页</string>
+    <string name="shoucang_image">底部导航-收藏</string>
+    <string name="shoucang_text">收藏</string>
+    <string name="quanzi_image">底部导航-圈子</string>
+    <string name="quanzi_text">圈子</string>
+    <string name="mine_image">底部导航-我的</string>
+    <string name="mine_text">我的</string>
 </resources>

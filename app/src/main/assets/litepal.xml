@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="foods" />
+
+    <version value="3" />
+
+    <list>
+
+        <!--分类标签-->
+        <mapping class="crirecipe.criusker.crirecipe.gson.fenleibiaoqian.FenleiBasic"/>
+        <mapping class="crirecipe.criusker.crirecipe.gson.fenleibiaoqian.CategoryInfoBeanX"/>
+        <mapping class="crirecipe.criusker.crirecipe.gson.fenleibiaoqian.CategoryInfoBeanXX"/>
+        <!--按标签查询菜谱-->
+        <mapping class="crirecipe.criusker.crirecipe.gson.biaoqiancaipu.BQCaipuBasic"/>
+        <mapping class="crirecipe.criusker.crirecipe.gson.biaoqiancaipu.ListBean"/>
+        <mapping class="crirecipe.criusker.crirecipe.gson.biaoqiancaipu.RecipeBean"/>
+
+    </list>
+</litepal>
