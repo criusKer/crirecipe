@@ -2,7 +2,6 @@ package crirecipe.criusker.crirecipe.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -18,7 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import org.litepal.LitePal;
 
@@ -43,6 +41,10 @@ import okhttp3.Response;
 
 /**
  * Create by 李菀直 on 2019/1/1.
+ * 首页
+ *  目前存在的问题和未完善的功能：
+ *   1.搜索功能未实现
+ *   2.分类功能未实现
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
@@ -58,13 +60,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private final int HEAD_ONCLICK = 0;
     private final int REFRESH = 1;
 
-    HomeContentAdapter contentAdapter;
-    HomeHeadAdapter headAdapter;
-    RecyclerView homeContent;
-    EditText etHomeSearch;
-    Button btnShare;
-    Button btnMsg;
-    Button btnFenlei;
+    private HomeContentAdapter contentAdapter;
+    private HomeHeadAdapter headAdapter;
+    private RecyclerView homeContent;
+    private EditText etHomeSearch;
+    private Button btnShare;
+    private Button btnMsg;
+    private Button btnFenlei;
 
     //onCreateView：加载布局
     @Nullable
